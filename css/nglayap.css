@@ -78,30 +78,23 @@
     }
 }
 
-
-
-
-
-
-/* .login{
-    margin-top: 4%;
-
-}
-
-.posisi{
-    margin-top: -2%;
-
-} */
-
 .logo{
     width: 70%;
-    margin-left: 15%;
+    margin-left: 17%;
+    margin-bottom: 8%;
+    margin-top: -2px;
 
 }
 
 .login .form{
     margin-top: 20%;
     margin-left: 10%;
+}
+
+.garis{
+    margin-top: 7%;
+    width: 100%;
+
 }
 
 .input{
@@ -195,46 +188,24 @@
 }
 
 
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
+/* @media (min-width: 768px) {
+   
 }
   
 @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
+   
 }
   
 @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
+   
 }
 
 @media only screen and (min-width:600px) {
-    .container .col-4{
-        float: left;
-        width: 40%;
-    }
-
-    .container .col-8{
-        float: right;
-        width: 50%;
-    }
+    
 }
 
 @media only screen and (min-width:768px) {
-    .container .col-4{
-        width: 35%;
-    }
-
-    .container .col-8{
-        width: 50%;
-        margin-left: 15%;
-        
-    }
+ 
     
-}
+} */
 
