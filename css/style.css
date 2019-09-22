@@ -1,0 +1,272 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.hero-image{
+    position: relative;
+    height: 980px;
+    overflow: hidden;
+    background: url(../images/bromo.jpg) no-repeat center;
+    background-size: cover; 
+}
+.container{
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    overflow: hidden;
+    text-align: right;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 3 6px black;
+    transform: translate(-50%,-50%);
+}
+.container h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 120px;
+    opacity: 0.85;
+    font-weight: bold;
+}
+.des{
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    opacity: 0.85;
+}
+.menu{
+    position: absolute;
+    padding: 0px 30px;
+    margin: 0px;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1250px;
+    background: white;
+    border-radius: 8px;
+}
+.menu h3{
+    letter-spacing: 0.3em;
+    float: left;
+    padding: 0px 10px;
+}
+nav{
+    float: right;
+    padding: 18px 10px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    padding: 0px 10px;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    margin-left: 50px;
+    padding: 0px 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 17px 3px;
+}
+.active{
+    color: #3E9CEE;
+    border-bottom: 7px solid #3E9CEE;
+}
+nav ul li img{
+    width: 20px;
+}
+.search{
+    position: absolute;
+    padding: 0px 30px;
+    margin: 0px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    background: white;
+    border-radius: 8px;
+}
+.search form{
+    padding: 20px 10px;
+}
+.search form span{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px 15px;
+}
+.search form input{
+    margin-right: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 15px;
+    border: 2px solid #3E9CEE;
+}
+.search form select{
+    margin-right: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 15px;
+    border: 2px solid #3E9CEE; 
+}
+.search form button{
+    background-color: #3E9CEE;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.member{
+    position: absolute;
+    left: 50%;
+    top: 82%;
+    transform: translate(-50%,-50%);
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+.member h3{
+    padding: 0px;
+    margin: 0px;
+}
+.member a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #3E9CEE;
+}
+.destinasiPopuler{
+    padding: 40px;
+    background-color: white;
+    position: relative;
+}
+.title{
+    background-color: white;
+    padding-top: 50px;
+}
+.title .line{
+    background-color: #3E9CEE;
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    color: #3E9CEE;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    text-align: center;
+    font-size: 60px;
+    margin: 10px;
+    padding: 10px;
+    color: #3E9CEE;
+}
+.populer{
+    background-color: white;
+    padding: 130px 110px;
+    height: 450px;
+    position: relative;
+}
+.populer .konten{
+    position: relative;
+    float: left;
+    padding: 0px 80px;
+}
+.populer .konten img{
+    width: 370px;
+    height: 240px;
+    object-fit: cover;
+}
+.populer .konten h3{
+    font-size: 22px;
+    padding: 0px;
+    padding-top: 35px;
+}
+.populer .konten p{
+    width: 350px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 5px 0px;
+}
+.populer .konten .rating{
+    padding-top: 50px;
+}
+.populer .konten .rating img{
+    width: 20px;
+    height: 20px;
+}
+.populer .konten .rating h6{
+    float: right;
+    margin: 0;
+}
+.wisata{
+    position: absolute;
+    background-color: #3E9CEE;
+    padding: 100px 40px;
+}
+.wisata .konten{
+    position: relative;
+    border-radius: 15px;
+    width: 500px;
+    background-color: white;
+    padding: 50px 0px;
+    float: left;
+    margin: 20px 50px;
+}
+.wisata .konten h3{
+    padding: 0px 40px;
+    font-size: 22px;
+    margin: 0px;
+    float: left;
+}
+.wisata .konten .rating{
+    padding: 0px 40px;
+    float: right;
+}
+.wisata .konten .rating .star img{
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+.wisata .konten .rating h5{
+    margin: 0px;
+    padding: 5px 0px;
+    color: darkgray;
+    float: right;
+}
+.wisata .konten .foto{
+    width: 500px;
+    padding-top: 50px;
+    height: 240px;
+    object-fit: cover;
+}
+.wisata .konten p{
+    padding: 0px 40px;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+    font-size: 14px;
+}
+.wisata .konten button{
+    background-color: #3E9CEE;
+    border: none;
+    color: white;
+    padding: 15px 70px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 50px;
+}
