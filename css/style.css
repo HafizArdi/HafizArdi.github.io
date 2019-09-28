@@ -7,7 +7,7 @@ body{
 }
 .hero-image{
     position: relative;
-    height: 980px;
+    height: 600px;
     overflow: hidden;
     background: url(../images/bromo.jpg) no-repeat center;
     background-size: cover; 
@@ -15,7 +15,7 @@ body{
 .container{
     position: absolute;
     top: 60%;
-    left: 70%;
+    left: 75%;
     overflow: hidden;
     text-align: right;
     color: white;
@@ -26,14 +26,14 @@ body{
 .container h1{
     margin: 0px;
     padding: 0px;
-    font-size: 120px;
+    font-size: 70px;
     opacity: 0.85;
     font-weight: bold;
 }
 .des{
     margin: 0px;
     padding: 0px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: normal;
     letter-spacing: 0.2em;
     opacity: 0.85;
@@ -45,18 +45,18 @@ body{
     top: 8%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 1250px;
+    width: 1000px;
     background: white;
     border-radius: 8px;
 }
-.menu h3{
+.menu h4{
     letter-spacing: 0.3em;
     float: left;
     padding: 0px 10px;
 }
 nav{
     float: right;
-    padding: 18px 10px;
+    padding: 20px 10px;
 }
 nav ul{
     padding: 0;
@@ -66,7 +66,7 @@ nav ul{
 nav ul li{
     list-style: none;
     float: left;
-    margin-left: 50px;
+    margin-left: 30px;
     padding: 0px 10px;
 }
 nav ul li a{
@@ -74,44 +74,49 @@ nav ul li a{
     color: black;
     font-weight: bold;
     padding: 17px 3px;
+    font-size: 12px;
 }
 .active{
     color: #3E9CEE;
     border-bottom: 7px solid #3E9CEE;
 }
 nav ul li img{
-    width: 20px;
+    width: 15px;
 }
 .search{
     position: absolute;
-    padding: 0px 30px;
+    padding: 0px 10px;
     margin: 0px;
     top: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 900px;
+    width: 680px;
     background: white;
     border-radius: 8px;
 }
 .search form{
-    padding: 20px 10px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .search form span{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
-    padding: 0px 15px;
+    padding: 0px 5px;
 }
 .search form input{
     margin-right: 20px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 12px;
     padding: 5px 15px;
+    height: 15px;
     border: 2px solid #3E9CEE;
 }
 .search form select{
     margin-right: 20px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 12px;
     padding: 5px 15px;
     border: 2px solid #3E9CEE; 
 }
@@ -119,18 +124,19 @@ nav ul li img{
     background-color: #3E9CEE;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
+    border-radius: 2px;
 }
 .member{
     position: absolute;
     left: 50%;
-    top: 82%;
+    top: 80%;
     transform: translate(-50%,-50%);
-    font-size: 16px;
+    font-size: 12px;
     color: white;
     text-align: center;
 }
@@ -144,9 +150,9 @@ nav ul li img{
     color: #3E9CEE;
 }
 .destinasiPopuler{
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
     background-color: white;
+    position: relative;
    
 }
 .title{
@@ -155,8 +161,8 @@ nav ul li img{
 }
 .title .line{
     background-color: #3E9CEE;
-    width: 50px;
-    height: 10px;
+    width: 30px;
+    height: 5px;
     position: absolute;
     color: #3E9CEE;
     left: 50%;
@@ -164,119 +170,121 @@ nav ul li img{
 }
 .title h1{
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     margin: 10px;
     padding: 10px;
     color: #3E9CEE;
 }
 .populer{
-    width: 100%;  
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: row wrap;
-    justify-content: flex-start;
-    align-items: center;
     background-color: white;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   
 }
 .populer .konten{
     position: relative;
     float: left;
-    padding: 0px 38px;
+    padding: 0px 45px;
+    padding-bottom: 70px;
 }
 .populer .konten img{
-    width: 370px;
-    height: 240px;
+    width: 250px;
+    height: 150px;
     object-fit: cover;
 }
 .populer .konten h3{
-    font-size: 22px;
+    font-size: 16px;
     padding: 0px;
-    padding-top: 35px;
+    padding-top: 10px;
 }
 .populer .konten p{
-    width: 350px;
+    width: 250px;
     height: 40px;
     overflow: hidden;
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px 0px;
 }
 .populer .konten .rating{
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .populer .konten .rating img{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
 }
 .populer .konten .rating h6{
     float: right;
     margin: 0;
+    font-size: 10px;
 }
 .wisata{
-    margin-top: 10%;
-    position: absolute;
+    padding: 20px;
+    position: relative;
     background-color: #3E9CEE;
-    padding: 100px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .wisata .konten{
-    position: relative;
-    border-radius: 15px;
-    width: 500px;
+    border-radius: 8px;
+    width: 320px;
     background-color: white;
-    padding: 50px 0px;
-    float: left;
-    margin: 20px 50px;
+    padding: 8px 0px;
+    margin: 10px;
+}
+.wisata .konten .title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
 }
 .wisata .konten h3{
-    padding: 0px 40px;
-    font-size: 22px;
-    margin: 0px;
-    float: left;
+    padding: 0px;
+    font-size: 14px;
 }
 .wisata .konten .rating{
-    padding: 0px 40px;
-    float: right;
+    display: flex;
+    flex-direction: column;
 }
 .wisata .konten .rating .star img{
+    width: 10px;
+    height: 10px;
     float: right;
-    width: 20px;
-    height: 20px;
 }
 .wisata .konten .rating h5{
     margin: 0px;
+    font-size: 10px;
     padding: 5px 0px;
     color: darkgray;
-    float: right;
 }
 .wisata .konten .foto{
-    width: 500px;
-    padding-top: 50px;
-    height: 240px;
+    width: 320px;
+    height: 200px;
     object-fit: cover;
 }
 .wisata .konten p{
-    padding: 0px 40px;
-    position: relative;
-    height: 60px;
+    padding: 0px 20px;
+    height: 48px;
     overflow: hidden;
-    font-size: 14px;
+    font-size: 11px;
 }
 .wisata .konten button{
     background-color: #3E9CEE;
     border: none;
     color: white;
-    padding: 15px 70px;
+    padding: 15px 40px;
     border-radius: 7px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 14px;
     position: relative;
     left: 50%;
     transform: translate(-50%,-50%);
-    margin-top: 50px;
+    margin-top: 30px;
 }
