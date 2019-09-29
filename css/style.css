@@ -9,16 +9,13 @@ body{
     position: relative;
     height: 600px;
     overflow: hidden;
-    background: url(../images/bromo.jpg) no-repeat center;
     background-size: cover; 
 }
-
-.trip-image{
-    position: relative;
-    height: 600px;
-    overflow: hidden;
+#home_image{
+    background: url(../images/bromo.jpg) no-repeat center;
+}
+#trip_image{
     background: url(../images/baluran.jpg) no-repeat center;
-    background-size: cover; 
 }
 .container{
     position: absolute;

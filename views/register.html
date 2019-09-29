@@ -12,31 +12,37 @@
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
-                <form class="login100-form" method="POST" action="../views/login.html">
-                    <div class ="logo">
-                        <a href=""><img src="../images/logo4.png" class="logo"></a>
-                    </div><br>
-                    <span class="login100-form-title">
-                        <small>Register Form</small>
-                    </span>
-                    <div class="form-group">
-                        <input class="input" id="validationEmail" type="text" placeholder="Nama">
-                    </div><br>
-                    <div class="form-group">
-                        <input class="input" id="validationEmail" type="text" placeholder="EmailAddress">
-                    </div><br>
-                    <div class="form-group">
-                        <input class="input" id="validationPassword" type="text" placeholder="Password">
-                    </div>
+                <div class="login100-form">
+                    <form method="POST" action="../views/login.html">
+                        <span class="login100-form-title">
+                            <h3>REGISTER</h3>
+                        </span>
+                        <div class="form-group">
+                            <input class="input" id="inputAtas" type="text" placeholder="Nama">
+                        </div>
+                        <div class="form-group">
+                            <input class="input" id="inputtengah" type="text" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input class="input" id="inputTengah" type="text" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input class="input" id="inputBawah" type="text" placeholder="Confirmation Password">
+                        </div>
+                        <div class="container-login-form-btn">
+                            <button type="submit" class="btnSignUp">DAFTAR
+                            </button>
+                        </div>  
+                    </form>
+                    <br><br><br><br><br>
+                    <div class="account">Don't have account ?</div> 
                     <div class="container-login-form-btn">
-                        <button type="submit" class="login-form-btnSignUp">
-                            <i>Daftar</i>
-                        </button>
-                    </div>  
-                </form>
-                <div class="login100-more" style="background-image: url('../images/login.jpg');">
+                        <button type="submit" class="btnSignIn">SIGN UP NOW</button>
+                    </div>
                 </div>
+                <div class="login100-more"></div>
             </div>
+            
         </div>
     </div>
 </body>
