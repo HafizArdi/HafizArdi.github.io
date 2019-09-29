@@ -12,10 +12,30 @@ body{
     background: url(../images/bromo.jpg) no-repeat center;
     background-size: cover; 
 }
+
+.trip-image{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background: url(../images/baluran.jpg) no-repeat center;
+    background-size: cover; 
+}
 .container{
     position: absolute;
     top: 60%;
     left: 75%;
+    overflow: hidden;
+    text-align: right;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 3 6px black;
+    transform: translate(-50%,-50%);
+}
+
+.containerTrip{
+    position: absolute;
+    top: 75%;
+    left: 13%;
     overflow: hidden;
     text-align: right;
     color: white;
@@ -30,6 +50,15 @@ body{
     opacity: 0.85;
     font-weight: bold;
 }
+
+.containerTrip h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 45px;
+    opacity: 0.85;
+    font-weight: bold;
+}
+
 .des{
     margin: 0px;
     padding: 0px;
@@ -38,6 +67,17 @@ body{
     letter-spacing: 0.2em;
     opacity: 0.85;
 }
+
+.desTrip{
+    margin: 0px;
+    margin-right: 45px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    opacity: 0.55;
+}
+
 .menu{
     position: absolute;
     padding: 0px 30px;
@@ -92,6 +132,17 @@ nav ul li img{
     transform: translate(-50%,-50%);
     width: 680px;
     background: white;
+    border-radius: 8px;
+}
+.searchTrip{
+    position: absolute;
+    padding: 0px 10px;
+    margin: 0px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 680px;
+    background:#4d4d33;
     border-radius: 8px;
 }
 .search form{
@@ -158,6 +209,17 @@ nav ul li img{
 .title{
     background-color: white;
     padding-top: 50px;
+}
+.titleTrip{
+    background-color:#f5f5f0;
+    padding-top: 50px;
+}
+.titleTrip h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+    color: #3E9CEE;
 }
 .title .line{
     background-color: #3E9CEE;
@@ -230,6 +292,77 @@ nav ul li img{
     justify-content: center;
     align-items: center;
 }
+.trip{
+    padding: 20px;
+    position: relative;
+    background-color:#f5f5f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.trip .konten{
+    border-radius: 8px;
+    width: 320px;
+    background-color:white;
+    padding: 8px 0px;
+    margin: 10px;
+}
+
+.trip .konten .title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+.trip .konten h3{
+    padding: 0px;
+    font-size: 14px;
+}
+.trip .konten .rating{
+    display: flex;
+    flex-direction: column;
+}
+.trip .konten .rating .star img{
+    width: 10px;
+    height: 10px;
+    float: right;
+}
+.trip .konten .rating h5{
+    margin: 0px;
+    font-size: 10px;
+    padding: 5px 0px;
+    color: darkgray;
+}
+.trip .konten .foto{
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+}
+.trip .konten p{
+    padding: 0px 20px;
+    height: 48px;
+    overflow: hidden;
+    font-size: 11px;
+}
+.trip .konten button{
+    background-color: #3E9CEE;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 30px;
+}
+
 .wisata .konten{
     border-radius: 8px;
     width: 320px;
@@ -288,4 +421,13 @@ nav ul li img{
     left: 50%;
     transform: translate(-50%,-50%);
     margin-top: 30px;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3E9CEE;
+    color: white;
+    text-align: center;
 }
