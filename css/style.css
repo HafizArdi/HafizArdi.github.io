@@ -181,7 +181,8 @@ nav ul li img{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-content: center;
     align-items: center;
   
 }
