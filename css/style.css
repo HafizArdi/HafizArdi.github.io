@@ -96,26 +96,27 @@ body{
     padding: 0px 10px;
 }
 
-nav{
+.menu nav{
     float: right;
     padding: 20px 10px;
 }
 
-nav ul{
+.menu nav ul{
     padding: 0;
     margin: 0;
     padding: 0px 10px;
 }
 
-nav ul li{
+.menu nav ul li{
     list-style: none;
     float: left;
     margin-left: 30px;
     padding: 0px 10px;
 }
 
-nav ul li a{
+.menu nav ul li a{
     text-decoration: none;
+    color: black;
     font-weight: bold;
     padding: 17px 3px;
     font-size: 12px;
@@ -468,29 +469,104 @@ nav ul li img{
     transform: translate(-50%,-50%);
     margin-top: 30px;
 }
+#footerDark{
+    background-color: #005FB1;
+}
+
+#footerBlue{
+    background-color: #3E9CEE;
+}
 
 .footer {
+    height: 70px;
     display: flex;
     flex-wrap: wrap;
-    position: realative;
+    justify-content: space-between;
+    position: relative;
     width: 100%;
-    background-color: #3E9CEE;
     color: white;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.footer nav{
+    float: right;
+    margin: 18px 0px;
+}
+
+.footer nav ul{
+    padding: 0;
+    margin: 0;
+    padding: 0px 10px;
+}
+
+.footer nav ul li{
+    list-style: none;
+    float: left;
+    margin-left: 30px;
+}
+
+.footer nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 17px 3px;
+    font-size: 12px;
 }
 
 .tulisanKiri{
     margin-left: 13%;
     font-size: 25px;
-    margin-top: 10px;
+}
+
+.tulisanKiri h3{
+    letter-spacing: 0.3em;
+    float: left;
+    margin: 15px 0px;
 }
 
 .tulisanKanan{
     float: right;
-    padding: 20px 10px;
-    margin-left: 35%;
+    margin-right: 13%;
     font-size: 18px;
 }
 
+.service{
+    background-color: white;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
 
+.service .konten{
+    position: relative;
+    padding: 0px 45px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service .konten img{
+    height: 100px;
+}
+
+.service .konten h3{
+    font-size: 16px;
+    color: #3E9CEE;
+    padding: 0px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.service .konten p{
+    width: 250px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 5px 0px;
+    text-align: center;
+}
