@@ -5,6 +5,7 @@ body{
     background: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
 .hero-image{
     position: relative;
     height: 600px;
@@ -20,6 +21,7 @@ body{
     background: url(../images/baluran.jpg) no-repeat center;
     background-size: cover; 
 }
+
 .container{
     position: absolute;
     top: 60%;
@@ -43,6 +45,7 @@ body{
     text-shadow: 0 3 6px black;
     transform: translate(-50%,-50%);
 }
+
 .container h1{
     margin: 0px;
     padding: 0px;
@@ -89,40 +92,47 @@ body{
     background: white;
     border-radius: 8px;
 }
+
 .menu h4{
     letter-spacing: 0.3em;
     float: left;
     padding: 0px 10px;
 }
+
 nav{
     float: right;
     padding: 20px 10px;
 }
+
 nav ul{
     padding: 0;
     margin: 0;
     padding: 0px 10px;
 }
+
 nav ul li{
     list-style: none;
     float: left;
     margin-left: 30px;
     padding: 0px 10px;
 }
+
 nav ul li a{
     text-decoration: none;
-    color: black;
     font-weight: bold;
     padding: 17px 3px;
     font-size: 12px;
 }
+
 .active{
     color: #3E9CEE;
     border-bottom: 7px solid #3E9CEE;
 }
+
 nav ul li img{
     width: 15px;
 }
+
 .search{
     position: absolute;
     padding: 0px 10px;
@@ -134,6 +144,7 @@ nav ul li img{
     background: white;
     border-radius: 8px;
 }
+
 .searchTrip{
     position: absolute;
     padding: 0px 10px;
@@ -145,17 +156,20 @@ nav ul li img{
     background:#4d4d33;
     border-radius: 8px;
 }
+
 .search form{
     padding: 10px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .search form span{
     font-size: 12px;
     font-weight: bold;
     padding: 0px 5px;
 }
+
 .search form input{
     margin-right: 20px;
     border-radius: 5px;
@@ -164,6 +178,7 @@ nav ul li img{
     height: 15px;
     border: 2px solid #3E9CEE;
 }
+
 .search form select{
     margin-right: 20px;
     border-radius: 5px;
@@ -171,6 +186,7 @@ nav ul li img{
     padding: 5px 15px;
     border: 2px solid #3E9CEE; 
 }
+
 .search form button{
     background-color: #3E9CEE;
     border: none;
@@ -182,6 +198,7 @@ nav ul li img{
     font-size: 12px;
     border-radius: 2px;
 }
+
 .member{
     position: absolute;
     left: 50%;
@@ -191,29 +208,35 @@ nav ul li img{
     color: white;
     text-align: center;
 }
+
 .member h3{
     padding: 0px;
     margin: 0px;
 }
+
 .member a{
     font-weight: bold;
     text-decoration: none;
     color: #3E9CEE;
 }
+
 .destinasiPopuler{
     padding: 20px;
     background-color: white;
     position: relative;
    
 }
+
 .title{
     background-color: white;
     padding-top: 50px;
 }
+
 .titleTrip{
     background-color:#f5f5f0;
     padding-top: 50px;
 }
+
 .titleTrip h1{
     text-align: center;
     font-size: 30px;
@@ -221,6 +244,7 @@ nav ul li img{
     padding: 10px;
     color: #3E9CEE;
 }
+
 .title .line{
     background-color: #3E9CEE;
     width: 30px;
@@ -230,6 +254,7 @@ nav ul li img{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 .title h1{
     text-align: center;
     font-size: 30px;
@@ -237,6 +262,7 @@ nav ul li img{
     padding: 10px;
     color: #3E9CEE;
 }
+
 .populer{
     background-color: white;
     padding: 50px;
@@ -246,24 +272,27 @@ nav ul li img{
     justify-content: space-between;
     align-content: center;
     align-items: center;
-  
 }
+
 .populer .konten{
     position: relative;
     float: left;
     padding: 0px 45px;
     padding-bottom: 70px;
 }
+
 .populer .konten img{
     width: 250px;
     height: 150px;
     object-fit: cover;
 }
+
 .populer .konten h3{
     font-size: 16px;
     padding: 0px;
     padding-top: 10px;
 }
+
 .populer .konten p{
     width: 250px;
     height: 40px;
@@ -271,18 +300,22 @@ nav ul li img{
     font-size: 12px;
     padding: 5px 0px;
 }
+
 .populer .konten .rating{
     padding-top: 30px;
 }
+
 .populer .konten .rating img{
     width: 10px;
     height: 10px;
 }
+
 .populer .konten .rating h6{
     float: right;
     margin: 0;
     font-size: 10px;
 }
+
 .wisata{
     padding: 20px;
     position: relative;
@@ -292,6 +325,7 @@ nav ul li img{
     justify-content: center;
     align-items: center;
 }
+
 .trip{
     padding: 20px;
     position: relative;
@@ -317,36 +351,43 @@ nav ul li img{
     align-items: center;
     padding: 15px 30px;
 }
+
 .trip .konten h3{
     padding: 0px;
     font-size: 14px;
 }
+
 .trip .konten .rating{
     display: flex;
     flex-direction: column;
 }
+
 .trip .konten .rating .star img{
     width: 10px;
     height: 10px;
     float: right;
 }
+
 .trip .konten .rating h5{
     margin: 0px;
     font-size: 10px;
     padding: 5px 0px;
     color: darkgray;
 }
+
 .trip .konten .foto{
     width: 320px;
     height: 200px;
     object-fit: cover;
 }
+
 .trip .konten p{
     padding: 0px 20px;
     height: 48px;
     overflow: hidden;
     font-size: 11px;
 }
+
 .trip .konten button{
     background-color: #3E9CEE;
     border: none;
@@ -370,6 +411,7 @@ nav ul li img{
     padding: 8px 0px;
     margin: 10px;
 }
+
 .wisata .konten .title{
     display: flex;
     flex-wrap: wrap;
@@ -377,36 +419,43 @@ nav ul li img{
     align-items: center;
     padding: 15px 30px;
 }
+
 .wisata .konten h3{
     padding: 0px;
     font-size: 14px;
 }
+
 .wisata .konten .rating{
     display: flex;
     flex-direction: column;
 }
+
 .wisata .konten .rating .star img{
     width: 10px;
     height: 10px;
     float: right;
 }
+
 .wisata .konten .rating h5{
     margin: 0px;
     font-size: 10px;
     padding: 5px 0px;
     color: darkgray;
 }
+
 .wisata .konten .foto{
     width: 320px;
     height: 200px;
     object-fit: cover;
 }
+
 .wisata .konten p{
     padding: 0px 20px;
     height: 48px;
     overflow: hidden;
     font-size: 11px;
 }
+
 .wisata .konten button{
     background-color: #3E9CEE;
     border: none;
@@ -422,12 +471,29 @@ nav ul li img{
     transform: translate(-50%,-50%);
     margin-top: 30px;
 }
+
 .footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: realative;
     width: 100%;
     background-color: #3E9CEE;
     color: white;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
+.tulisanKiri{
+    margin-left: 13%;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.tulisanKanan{
+    float: right;
+    padding: 20px 10px;
+    margin-left: 35%;
+    font-size: 18px;
+}
+
+
