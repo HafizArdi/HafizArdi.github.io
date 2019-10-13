@@ -61,8 +61,8 @@
             </div>
             <div class="populer">
                 <div class="konten">
-                    <img src="../images/bromoSemeru.jpg" alt="">
-                    <h3>Gunung Bromo</h3>
+                    <img src="../images/bromoSemeru.jpg" alt="" id="img1">
+                    <h3 id="img">Gunung Bromo</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sint exercitationem, et maxime perspiciatis libero eius error sit eaque qui, commodi tempore dolorem aperiam cupiditate asperiores repellendus in deserunt unde.</p>
                     <div class="rating">
                         <img src="../images/star.svg" alt="" class="star">
@@ -74,8 +74,8 @@
                     </div>
                 </div>
                 <div class="konten">
-                    <img src="../images/ijen.jpg" alt="">
-                    <h3>Kawah Ijen</h3>
+                    <img src="../images/ijen.jpg" alt="" id="img2">
+                    <h3 id="img">Kawah Ijen</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sint exercitationem, et maxime perspiciatis libero eius error sit eaque qui, commodi tempore dolorem aperiam cupiditate asperiores repellendus in deserunt unde.</p>
                     <div class="rating">
                         <img src="../images/star.svg" alt="">
@@ -87,8 +87,8 @@
                     </div>
                 </div>
                 <div class="konten">
-                    <img src="../images/papuma.jpg" alt="">
-                    <h3>Pantai Papuma</h3>
+                    <img src="../images/papuma.jpg" alt="" id="img3">
+                    <h3 id="img">Pantai Papuma</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sint exercitationem, et maxime perspiciatis libero eius error sit eaque qui, commodi tempore dolorem aperiam cupiditate asperiores repellendus in deserunt unde.</p>
                     <div class="rating">
                         <img src="../images/star.svg" alt="">
@@ -227,4 +227,16 @@
                 </div>
             </div>
     </body>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+            if (document.body.scrollTop > 230 || document.documentElement.scrollTop > 230) {
+            document.getElementById("img1").className = "slideUp";
+            document.getElementById("img2").className = "slideUp";
+            document.getElementById("img3").className = "slideUp";
+            }
+        }
+    </script>
+
 </html>
