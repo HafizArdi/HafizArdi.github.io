@@ -18,6 +18,9 @@ body{
 #trip_image{
     background: url(../images/baluran.jpg) no-repeat center;
 }
+#service_image{
+    background: url(../images/bromoSemeru.jpg) no-repeat center;
+}
 
 .container{
     position: absolute;
@@ -77,6 +80,43 @@ body{
     letter-spacing: 0.2em;
     opacity: 0.55;
 }
+.navigasi {
+    display: block;
+    margin: 0;padding: 0;
+    background: white;
+}
+.navigasi > .nav-menu {
+    position: relative;
+    margin: 0;padding: 0px;
+    list-style: none;
+    transition: all .4s ease;
+    background: white;
+}
+.btn-responsive {
+    position: absolute;
+    display: none;
+    top: 9px;right: 5px;
+    margin: 0;padding: 0;
+    width: 50px;height: 50px;
+    cursor: pointer;
+    z-index: 100;
+}
+.btn-responsive > .bar {
+    position: absolute;
+    top: 12px;left: 10px;
+    width: 25px;height: 3px;
+    background: #3E9CEE;
+}
+.btn-responsive > .bar:nth-child(1) {
+    top: 20px;
+}
+.btn-responsive > .bar:nth-child(2) {
+    top: 28px;
+}
+.menu nav{
+    float: right;
+    padding: 20px 10px;
+}
 
 .menu{
     position: absolute;
@@ -85,7 +125,7 @@ body{
     top: 8%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 1000px;
+    width: 70%;
     background: white;
     border-radius: 8px;
 }
@@ -94,11 +134,6 @@ body{
     letter-spacing: 0.3em;
     float: left;
     padding: 0px 10px;
-}
-
-.menu nav{
-    float: right;
-    padding: 20px 10px;
 }
 
 .menu nav ul{
@@ -138,7 +173,7 @@ nav ul li img{
     top: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 680px;
+    width: 70%;
     background: white;
     border-radius: 8px;
 }
@@ -478,7 +513,6 @@ nav ul li img{
 }
 
 .footer {
-    height: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -496,37 +530,35 @@ nav ul li img{
 .footer nav ul{
     padding: 0;
     margin: 0;
-    padding: 0px 10px;
 }
 
 .footer nav ul li{
     list-style: none;
     float: left;
-    margin-left: 30px;
 }
 
 .footer nav ul li a{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 17px 3px;
+    padding: 17px 0px;
     font-size: 12px;
+    padding-right: 20px;
 }
 
 .tulisanKiri{
-    margin-left: 13%;
     font-size: 25px;
 }
 
 .tulisanKiri h3{
     letter-spacing: 0.3em;
     float: left;
+    padding: 0px 50px;
     margin: 15px 0px;
 }
 
 .tulisanKanan{
-    float: right;
-    margin-right: 13%;
+    padding: 0px 50px;
     font-size: 18px;
 }
 
@@ -618,3 +650,89 @@ nav ul li img{
       -webkit-transform: translateY(0%);
     }
   }
+  @media screen and (max-width: 900px) {
+    .nav-menu {
+        max-height: 0;
+        overflow: hidden;
+    }
+    .nav-menu > li {
+        display: block;
+    }
+    .btn-responsive {
+        display: block;
+    }
+    #btn-responsive:checked ~ .nav-menu {
+        max-height: 300px;
+        overflow: visible;
+    }
+    .menu nav {
+        padding: 0px 0px;
+    }
+
+    .menu nav ul li{
+        list-style: none;
+        float: left;
+        margin-left: 0px;
+        padding: 0px 10px;
+        display: flex;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .search form input{
+        margin-right: 0px;
+        padding: 5px 15px;
+    }
+    .search form select{
+        margin-right: 5px;
+    }
+    .search div{
+        margin-bottom: 3px;
+    }
+
+    
+}
+@media screen and (max-width: 800px) {
+    .container{
+        top: 45%;
+        left: 50%;
+        overflow: hidden;
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .search{
+        top: 85%;
+    }  
+    .search form{
+        flex-direction: column;
+    }
+
+    .search form input{
+        margin-right: 0px;
+        padding: 5px 15px;
+    }
+
+    .search div{
+        margin-bottom: 3px;
+    }
+    .member{
+        top: 70%;
+    }
+
+    .search form button{
+        background-color: #3E9CEE;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin-top: 10px;
+        border-radius: 5px;
+        width: 200px;
+    }
+}
+
