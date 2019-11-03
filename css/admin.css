@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fafafa;
+}
+
+a{
+    text-decoration:none
+}
+
+.wrapper {
+    position: relative;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 260px;
+    background: #fff;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar[data-color="blue"] li.active>a {
+    background-color: #005FB1;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+}
+
+.sidebar .logo {
+    padding: 15px 0px;
+    margin: 0;
+    display: block;
+    position: relative;
+}
+
+.sidebar .logo:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    height: 1px;
+    width: calc(100% - 30px);
+    background-color: rgba(180, 180, 180, 0.9);
+}
+
+.sidebar .logo .nama {
+    text-transform: uppercase;
+    padding: 5px;
+    display: inline-block;
+    font-size: 18px;
+    color: #3C4858;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+}
+
+.sidebar .sidebar-fitur{
+    position: relative;
+    height: calc(100vh - 75px);
+    overflow: auto;
+    width: 260px;
+    z-index: 4;
+    padding-bottom: 30px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.sidebar .nav {
+    margin-top: 20px;
+    display: block;
+}
+
+.sidebar .nav i {
+    font-size: 24px;
+    float: left;
+    margin-right: 15px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #a9afbb;
+}
+
+.sidebar .nav p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    height: auto;
+    white-space: nowrap;
+}
+
+.sidebar .nav li a{
+    margin: 10px 15px 0;
+    border-radius: 3px;
+    color: #3C4858;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: capitalize;
+    font-size: 13px;
+    padding: 10px 15px;
+}
+
+
+.sidebar .nav li.active>a,
+.sidebar .nav li.active>a i {
+  color: #fff;
+}
+
+.sidebar .nav li:first-child>a {
+    margin: 0 15px;
+}
+
+
+
+@media (max-width: 991px) {
+    .sidebar .sidebar-wrapper {
+        padding-bottom: 60px;
+    }
+}
+
+
+
