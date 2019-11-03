@@ -13,7 +13,7 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="login100-form">
-                    <form name="myForm" onsubmit="return validateForm()" method="POST" action="../views/register.html">
+                    <form name="myForm" onsubmit="return validateForm()" method="POST" action="../views/admin/Trip/index.html">
                         <span class="login100-form-title">
                             <h3>NGLAYAP</h3>
                         </span>
@@ -49,7 +49,7 @@
           if (email == "") {
             alert("Email harus diisi");
             return false;
-          }else{
+          }else if (password == ""){
             alert("Password harus diisi");
             return false;
           }
