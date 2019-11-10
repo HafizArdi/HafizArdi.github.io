@@ -134,13 +134,26 @@ a{
     margin: 0 15px;
 }
 
-
-
 @media (max-width: 991px) {
     .sidebar .sidebar-wrapper {
         padding-bottom: 60px;
     }
 }
 
+.main-panel {
+    position: relative;
+    float: right;
+    width: calc(100% - 260px);
+    /* transition: 0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1); */
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
 
 
