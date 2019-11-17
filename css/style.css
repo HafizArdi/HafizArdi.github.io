@@ -640,9 +640,13 @@ nav ul li img{
     border: none;
     cursor: pointer;
     display: none;
+    border-radius: 15px;
 }
 #topBtn img{
     background-color: white;
+    margin-top: 2px;
+    width: 15px;
+    height: 15px;
 }
 
 @keyframes slideUp {
