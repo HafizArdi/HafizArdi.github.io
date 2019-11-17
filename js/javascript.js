@@ -46,8 +46,7 @@ $.fn.bintang = function(){
 
 $(document).ready(function(){
     console.log('document ready');
-    // $('.kawah-ijen').append('<button class="">See Detail</button>')
-    // $('#btn-ijen').html('Booking Sekarang');
+
     $('.kawah-ijen .star').bintang();
     $('.gunung-bromo .star').bintang();
     $('.papuma .star').bintang();
@@ -55,19 +54,16 @@ $(document).ready(function(){
     $('.borobudur .star').bintang();
     $('.labuan-bajo .star').bintang();
 
-    $('#register').validate({
-        onclick: false, // <-- add this option
-        rules: {
-            state: "required"
-        },
-        messages: {
-            state: {
-                required: "The State is required!"
-            }
-        },
-        errorPlacement: function (error, element) {
-            alert(error.text());
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 40){
+            $('#topBtn').fadeIn();
+        } else{
+            $('#topBtn').fadeOut();
         }
+    });
+    
+    $("#topBtn").click(function(){
+        $('html ,body').animate({scrollTop : 0},800);
     });
 
     window.onscroll = function() {myFunction()};
@@ -79,31 +75,4 @@ $(document).ready(function(){
         document.getElementById("img3").className = "slideUp";
         }
     }
-
-
-    // $('.kawah-ijen').css({'background-color' : '#fff', 'text-align': 'right'});
-    // $('.kawah-ijen').css('background-color', '#fff');
-
-    // $('.kawah-ijen').addClass('slideUp');
-    // $('.kawah-ijen').removeClass('slideUp');
-
-    // $('.my-file').
-
-
-    // $('#myForm').on('submit', function(ev) {
-    //     ev.stopPropagation();
-    //     console.log('perform form validation...');
-    //     // return validateForm();
-    //     let namaEl = $('#inputAtas');
-    //     let msg = $('<label/>');
-    //     if(namaEl.val() == "") {
-    //         msg.html('Isi nama');
-    //         namaEl.parent().append(msg);
-    //         setTimeout(function(){
-    //             msg.remove();
-    //         }, 5000);
-    //         return false;
-    //     }
-    //     return true;
-    // });
 });
