@@ -1,25 +1,40 @@
 $.fn.bintang = function(){
     var star = this.attr('rating');
     if (star == "1") {
-        this.append(`<img src="../images/star.svg" alt="">
+        this.append(`
+        <img src="../images/star.svg" alt="">
+        <img src="../images/grey-star.svg" alt="">
+        <img src="../images/grey-star.svg" alt="">
+        <img src="../images/grey-star.svg" alt="">
+        <img src="../images/grey-star.svg" alt="">
         `);
     } else if (star == "2") {
-        this.append(`<img src="../images/star.svg" alt="" title="star pakai jquery plugin">
+        this.append(`
         <img src="../images/star.svg" alt="">
+        <img src="../images/star.svg" alt="">
+        <img src="../images/grey-star.svg" alt="">
+        <img src="../images/grey-star.svg" alt="">
+        <img src="../images/grey-star.svg" alt="">
         `);
     } else if (star == "3") {
-        this.append(`<img src="../images/star.svg" alt="" title="star pakai jquery plugin">
+        this.append(`
         <img src="../images/star.svg" alt="">
         <img src="../images/star.svg" alt="">
+        <img src="../images/star.svg" alt="">
+        <img src="../images/grey-star.svg" alt="">
+        <img src="../images/grey-star.svg" alt="">
         `);
     } else if (star == "4") {
-        this.append(`<img src="../images/star.svg" alt="" title="star pakai jquery plugin">
+        this.append(`
         <img src="../images/star.svg" alt="">
         <img src="../images/star.svg" alt="">
         <img src="../images/star.svg" alt="">
+        <img src="../images/star.svg" alt="">
+        <img src="../images/grey-star.svg" alt="">
         `);
     } else if (star == "5") {
-        this.append(`<img src="../images/star.svg" alt="" title="star pakai jquery plugin">
+        this.append(`
+        <img src="../images/star.svg" alt="">
         <img src="../images/star.svg" alt="">
         <img src="../images/star.svg" alt="">
         <img src="../images/star.svg" alt="">
@@ -39,6 +54,31 @@ $(document).ready(function(){
     $('.baluran .star').bintang();
     $('.borobudur .star').bintang();
     $('.labuan-bajo .star').bintang();
+
+    $('#register').validate({
+        onclick: false, // <-- add this option
+        rules: {
+            state: "required"
+        },
+        messages: {
+            state: {
+                required: "The State is required!"
+            }
+        },
+        errorPlacement: function (error, element) {
+            alert(error.text());
+        }
+    });
+
+    window.onscroll = function() {myFunction()};
+        
+    function myFunction() {
+        if (document.body.scrollTop > 230 || document.documentElement.scrollTop > 230) {
+        document.getElementById("img1").className = "slideUp";
+        document.getElementById("img2").className = "slideUp";
+        document.getElementById("img3").className = "slideUp";
+        }
+    }
 
 
     // $('.kawah-ijen').css({'background-color' : '#fff', 'text-align': 'right'});
