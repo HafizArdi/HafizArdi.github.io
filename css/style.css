@@ -257,7 +257,6 @@ nav ul li img{
     padding: 20px;
     background-color: white;
     position: relative;
-   
 }
 
 .title{
@@ -647,6 +646,80 @@ nav ul li img{
     margin-top: 2px;
     width: 15px;
     height: 15px;
+}
+
+.detail{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 3 6px black;
+    transform: translate(-50%,-50%);
+}
+
+.detail .lokasi {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    opacity: 0.85;
+    text-transform: uppercase;
+}
+
+.detail .judul{
+    margin: 0px;
+    padding: 0px;
+    font-size: 70px;
+    opacity: 0.85;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.data {
+    padding: 20px 150px;
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+
+.data .foto{
+    padding: 20px;
+}
+
+.data .informasi{
+    padding: 20px;
+}
+
+.data .informasi h1{
+    text-transform: uppercase;
+    margin: 0px;
+    color: #3E9CEE;
+    font-size: 40px;
+}
+.data .informasi p{
+    margin: 0px;
+    font-size: 14px;
+}
+
+.data .informasi h3{
+    display: flex;
+    align-items: center;
+}
+
+.data .foto img {
+    width: 420px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
 }
 
 @keyframes slideUp {

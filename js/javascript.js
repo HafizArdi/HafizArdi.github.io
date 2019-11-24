@@ -47,6 +47,15 @@ $.fn.bintang = function(){
 $(document).ready(function(){
     console.log('document ready');
 
+    $(".image-destination").show(function() {
+        var attr = $(this).attr('hero-image');
+        if (typeof attr !== typeof undefined && attr !== false){
+            $(this).css('background', 'url(../images/'+$(this).attr('hero-image')+'.jpg)');
+        } else {
+            $(this).attr('src', '../images/'+$(this).attr('id')+'.jpg');
+        }
+    });
+
     $('.kawah-ijen .star').bintang();
     $('.gunung-bromo .star').bintang();
     $('.papuma .star').bintang();
@@ -60,6 +69,12 @@ $(document).ready(function(){
         } else{
             $('#topBtn').fadeOut();
         }
+    });
+
+    $("a #example2").fancybox({
+        'overlayShow'	: false,
+        'transitionIn'	: 'elastic',
+        'transitionOut'	: 'elastic'
     });
     
     $("#topBtn").click(function(){
