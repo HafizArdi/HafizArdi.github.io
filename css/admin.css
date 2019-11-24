@@ -154,12 +154,23 @@ a{
     margin-left: -15px;
 }
 
-.kolom {
+.kolom, 
+.kolom1 {
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.kolom {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.kolom1{
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 .kotak {
@@ -175,6 +186,17 @@ a{
     font-size: .875rem;
 }
 
+.kotak {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: #333333;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+
 .judul-kotak {
     padding: 0.75rem 1.25rem;
     margin-bottom: 0;
@@ -182,6 +204,18 @@ a{
     border-bottom: 1px solid #eeeeee;
     background: linear-gradient(60deg, #005FB1, #005FB1);
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
+}
+
+.kotak [class*="judul-kotak"] {
+    margin: 0px 15px 0;
+    padding: 0;
+    position: relative;
+}
+
+.kotak [class*="judul-kotak"]{
+    border-radius: 3px;
+    margin-top: -20px;
+    padding: 15px;
 }
 
 .judul-kotak h4 {
@@ -192,7 +226,72 @@ a{
 .judul-kotak p{
     margin-top: 10px;
     color: rgba(255, 255, 255, 0.8);
+}
 
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.kotak .card-body,
+.kotak .card-footer {
+    padding: 0.9375rem 1.875rem;
+}
+
+.kotak .card-body {
+    padding: 0.9375rem 20px;
+    position: relative;
+}
+
+.form{
+    padding-bottom: 10px;
+    position: relative;
+    margin: 8px 0 0;
+    margin-bottom: 1rem;
+}
+
+.form input[type=file] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.isianForm{
+    display: block;
+    width: 100%;
+    padding: 0.4375rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #d2d2d2;
+    border-radius: 0;
+}
+
+.isianForm:focus {
+    color: #495057;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #9acffa;
+    outline: 0;
+    box-shadow: none, 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
+}
+
+
+.isianForm {
+    border: 0;
+    height: 36px;
+    transition: background 0s ease-out;
+    padding-left: 0;
+    padding-right: 0px;
+    border-radius: 0;
+    font-size: 14px;
+    background-image: linear-gradient(to top, #005FB1 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #005FB1 1px, rgba(210, 210, 210, 0) 1px);
 }
 
 
