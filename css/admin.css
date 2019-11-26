@@ -250,21 +250,21 @@ a{
     margin-bottom: 1rem;
 }
 
-.form input[type=file] {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+input[type="file"] {
+    display: none;
+}
+.ingambarlabel {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    text-align:center;
+    width:92%;
 }
 
 .isianForm{
     display: block;
-    width: 100%;
+    width: 95%;
     padding: 0.4375rem 0;
     font-size: 1rem;
     line-height: 1.5;
@@ -292,6 +292,40 @@ a{
     border-radius: 0;
     font-size: 14px;
     background-image: linear-gradient(to top, #005FB1 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #005FB1 1px, rgba(210, 210, 210, 0) 1px);
+}
+
+textarea {
+    height: auto !important;
+    resize: none;
+    line-height: 1.428571 !important;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.46875rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-biru {
+    color: #ffffff;
+    background-color: #005FB1;
+    border-color: #005FB1;
+    box-shadow: none;
+}
+
+.btn-biru:hover {
+    color: #ffffff;
+    background-color: #005FB1;
+    border-color: #005FB1;
 }
 
 

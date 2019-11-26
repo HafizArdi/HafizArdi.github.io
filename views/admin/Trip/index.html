@@ -58,12 +58,24 @@
                                     <div class="baris">
                                         <div class="kolom1">
                                             <div class="form">
-                                                <label>Adress</label>
-                                                <input type="text" class="isianForm">
-                                                
+                                                <label for="ingambar" class="ingambarlabel">Pilih gambar</label>
+                                                <input type="file" name="foto" id="ingambar" class="isianForm inputgambar" accept="image/*">
+                                            </div>
+                                            <div class="form">
+                                                <input type="text" class="isianForm" placeholder="Nama">                                                
+                                            </div>
+                                            <div class="form">
+                                                <input type="text" class="isianForm" placeholder="Alamat">                                                
+                                            </div>
+                                            <div class="form">
+                                                <input type="text" class="isianForm" placeholder="Tempat Tinggal">                                                
+                                            </div>
+                                            <div class="form">
+                                                <textarea class="isianForm" placeholder="Deskripsi" rows="4"></textarea>                                              
                                             </div>
                                         </div>
                                     </div>
+                                    <button type="submit" class="btn btn-biru pull-right">Update Profile</button>
                                 </form>
                             </div>
                         </div>
