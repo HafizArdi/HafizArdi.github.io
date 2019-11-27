@@ -91,3 +91,23 @@ $(document).ready(function(){
         }
     }
 });
+
+function namedefine(){
+    event.preventDefault();
+    var ingambar = document.getElementsByClassName('inputgambar');
+    var inlabel = document.getElementsByClassName('ingambarlabel');
+    if(ingambar[0].value.length){
+        inlabel[0].innerHTML =  ingambar[0].files[0].name;
+        var oFReader = new FileReader();
+        oFReader.onload = function(oFREvent) {
+            document.getElementById("gambarpreview").src = oFREvent.target.result;
+        };
+        oFReader.readAsDataURL(ingambar[0].files[0]);
+        }
+        else{
+        console.log('cancelled');
+        }
+    }
+    $("#ingambar").change(function() {
+    namedefine();
+});

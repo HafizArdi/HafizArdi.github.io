@@ -154,8 +154,9 @@ a{
     margin-left: -15px;
 }
 
-.kolom, 
-.kolom1 {
+.kolom-4, 
+.kolom-8, 
+.kolom-12 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -163,12 +164,17 @@ a{
   padding-left: 15px;
 }
 
-.kolom {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
+.kolom-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
 }
 
-.kolom1{
+.kolom-8{
+    flex: 0 0 55.555555%;
+    max-width: 55.555555%;
+}
+
+.kolom-12{
     flex: 0 0 100%;
     max-width: 100%;
 }
@@ -177,16 +183,8 @@ a{
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid #eeeeee;
-    border-radius: 0.25rem;
     font-size: .875rem;
-}
-
-.kotak {
     border: 0;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -195,7 +193,7 @@ a{
     background: #fff;
     width: 100%;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  }
+}
 
 .judul-kotak {
     padding: 0.75rem 1.25rem;
@@ -228,17 +226,17 @@ a{
     color: rgba(255, 255, 255, 0.8);
 }
 
-.card-body {
+.isi-kotak{
     flex: 1 1 auto;
     padding: 1.25rem;
 }
 
-.kotak .card-body,
+.kotak .isi-kotak,
 .kotak .card-footer {
     padding: 0.9375rem 1.875rem;
 }
 
-.kotak .card-body {
+.kotak .isi-kotak{
     padding: 0.9375rem 20px;
     position: relative;
 }
@@ -253,6 +251,7 @@ a{
 input[type="file"] {
     display: none;
 }
+
 .ingambarlabel {
     border: 1px solid #ccc;
     display: inline-block;
@@ -313,6 +312,7 @@ textarea {
     line-height: 1.5;
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-left: 77%;
 }
 
 .btn-biru {
@@ -326,6 +326,29 @@ textarea {
     color: #ffffff;
     background-color: #005FB1;
     border-color: #005FB1;
+}
+
+.card-profile {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card-profile .bingkai-foto {
+    margin: -50px auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-profile .bingkai-foto img {
+    width: 100%;
+    height: auto;
+}
+
+.card-profile .bingkai-foto{
+    max-width: 130px;
+    max-height: 130px;
 }
 
 
