@@ -178,6 +178,77 @@
     margin-top: 20px;
 }
 
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    display: none;
+  }
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+  /* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+#popup-success,
+#popup-danger{
+    width: 500px;
+    overflow: hidden;
+    background: #f1f1f1;
+    box-shadow: 0 0 20px black;
+    border-radius: 8px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+#popup-success span{
+    color: #2ecc71;
+    font-size:40px;
+    display: block;
+    margin: 20px 0;
+}
+
+#popup-danger span{
+    color: #ff0000;
+    font-size:40px;
+    display: block;
+    margin: 20px 0;
+}
+
+#popup-success,
+#popup-danger h1{
+    color: #333;
+}
+
+.tutup{
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #3498db;
+    display: inline-block;
+    border-radius: 4px;
+}
+
 
 /* @media (min-width: 768px) {
    

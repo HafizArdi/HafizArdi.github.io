@@ -7,6 +7,7 @@
     <title>Nglayap</title>
     <link rel="icon" type="image/png" href="../images/icon.png">
     <link rel="stylesheet" href="../css/nglayap.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="limiter">
@@ -38,22 +39,20 @@
                     </div>
                 </div>
                 <div class="login100-more"></div>
+                <div id="popup-success">
+                    <span class="icon ion-md-checkmark"></span>
+                    <h1>Anda Berhasil Login</h1><br><br>
+                    <a onclick="lanjut()" class="tutup">Oke</a>
+                </div>
+                <div id="popup-danger">
+                    <span class="icon ion-md-close-circle-outline"></span>
+                    <h1>Email atau Password Salah</h1><br><br>
+                    <a onclick="gagal()" class="tutup">Kembali</a>
+                </div>
             </div>
         </div>
     </div>
-    <script>
-        function validateForm() {
-          var email = document.forms["myForm"]["email"].value;
-          var password = document.forms["myForm"]["password"].value;
-
-          if (email == "") {
-            alert("Email harus diisi");
-            return false;
-          }else if (password == ""){
-            alert("Password harus diisi");
-            return false;
-          }
-        }
-    </script>
 </body>
+<script type="text/javascript" src="../js/jquery/jquery.js"></script>
+<script type="text/javascript" src="../js/javascript.js"></script>
 </html>

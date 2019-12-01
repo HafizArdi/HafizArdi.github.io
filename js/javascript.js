@@ -111,3 +111,40 @@ function namedefine(){
     $("#ingambar").change(function() {
     namedefine();
 });
+
+
+function validateForm() {
+  var email = document.forms["myForm"]["email"].value;
+  var password = document.forms["myForm"]["password"].value;
+  var a =0;
+  var b = 0;
+
+
+  if (email == "" || password == "") {
+    if(a == 0){
+        document.getElementById("popup-danger").style.display="block";
+        a = 1;
+    }
+
+    return false;
+
+  }else if (email != "" && password != ""){
+    if(a == 0){
+        document.getElementById("popup-success").style.display="block";
+        a = 1;
+    }
+    return false;
+  }
+}
+
+function gagal(){
+    document.getElementById("popup-danger").style.display="none";
+    a = 0;
+}
+
+function lanjut(){
+    document.getElementById("popup-success").style.display="none";
+    window.location = "../views/admin/Trip/index.html"
+}
+
+
