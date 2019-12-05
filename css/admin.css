@@ -157,11 +157,11 @@ a{
 .kolom-4, 
 .kolom-8, 
 .kolom-12 {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .kolom-4 {
@@ -191,7 +191,7 @@ a{
     border-radius: 6px;
     color: #333333;
     background: #fff;
-    width: 100%;
+    width: 95%;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -252,6 +252,14 @@ input[type="file"] {
     display: none;
 }
 
+input[type=text], input[type=password], select, textarea {
+	padding:8px;
+	display:block;
+	/* border:none; */
+	border-bottom:1px solid #ccc;
+	width:95%
+}
+
 .ingambarlabel {
     border: 1px solid #ccc;
     display: inline-block;
@@ -305,14 +313,26 @@ textarea {
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    user-select: none;
     border: 1px solid transparent;
     padding: 0.46875rem 1rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    margin-left: 77%;
+    float: right;
+}
+
+.btn1{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 0.46875rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    margin-left: 85%;
 }
 
 .btn-biru {
@@ -322,18 +342,25 @@ textarea {
     box-shadow: none;
 }
 
+.btn-biruMuda {
+    color: #ffffff;
+    background-color: #2196f3;
+    border-color: #2196f3;
+    box-shadow: none;
+}
+
 .btn-biru:hover {
     color: #ffffff;
     background-color: #005FB1;
     border-color: #005FB1;
 }
 
-.card-profile {
+.kotak-profile {
     margin-top: 30px;
     text-align: center;
 }
 
-.card-profile .bingkai-foto {
+.kotak-profile .bingkai-foto {
     margin: -50px auto 0;
     border-radius: 50%;
     overflow: hidden;
@@ -341,15 +368,93 @@ textarea {
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
-.card-profile .bingkai-foto img {
+.kotak-profile .bingkai-foto img {
     width: 100%;
     height: auto;
 }
 
-.card-profile .bingkai-foto{
+.kotak-profile .bingkai-foto{
     max-width: 130px;
     max-height: 130px;
 }
+
+.text-primary {
+    color: #2196f3 !important;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+
+.popup {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	margin-left: 250px;
+	left:0;
+	top: 0;
+	width: 60%; 
+	height: 100%; 
+	overflow: disabled; 
+}
+
+.isiPopup {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+.popup-header {
+	padding: 2px 16px;
+	background-color: #005FB1;
+	color: white;
+}
+
+.popup-body {
+	padding: 2px 16px;
+}
+
+.popup-footer {
+	padding: 2px 16px;
+	background-color: #005FB1;
+	color: white;
+}
+
+.close,
+.close1 {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.close1:hover,
+.close1:focus{
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
 
 
 

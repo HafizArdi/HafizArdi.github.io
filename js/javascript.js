@@ -143,9 +143,55 @@ function gagal(){
     a = 0;
 }
 
-function lanjut(){
-    document.getElementById("popup-success").style.display="none";
-    window.location = "../views/admin/Trip/index.html"
+
+// tambah Trip
+var modal = document.getElementById("tambahTrip");
+
+
+var btn = document.getElementById("tambah");
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+        modal.style.display = "none";
+  }
+}
+
+// ubah Trip
+var modal1 = document.getElementById("ubahTrip");
+
+
+var btn1 = document.getElementById("ubah");
+
+var span1 = document.getElementsByClassName("close1")[0];
+
+
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+
+
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+        modal1.style.display = "none";
+  }
 }
 
 

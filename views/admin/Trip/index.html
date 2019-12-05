@@ -19,16 +19,16 @@
             </div>
             <div class="sidebar-list">
                 <ul class="fitur">
-                    <li class="active">
-                        <a class="tulisan" href="#">
+                    <li>
+                        <a class="tulisan" href="../Profile/index.html">
                             <i class="material-icons">account_circle</i>
                             <p>Profile</p>
                         </a>
                     </li>
                 </ul>
                 <ul class="fitur">
-                    <li>
-                        <a class="tulisan" href="#">
+                    <li class="active">
+                        <a class="tulisan" href="../Trip/index.html">
                             <i class="material-icons">local_airport</i>
                             <p>Trip</p>
                         </a>
@@ -36,7 +36,7 @@
                 </ul>
                 <ul class="fitur">
                     <li>
-                        <a class="tulisan" href="#">
+                        <a class="tulisan" href="../../login.html">
                             <i class="material-icons">exit_to_app</i>
                             <p>Logout</p>
                         </a>
@@ -47,52 +47,162 @@
         <div class="baground-konten">
             <div class="konten">
                 <div class="baris">
-                    <div class="kolom-8">
+                    <div class="kolom-12">
                         <div class="kotak">
                             <div class="judul-kotak">
-                                <h4>Edit Profile</h4>
-                                <p>Isikan Profile Dengan Lengkap</p>
+                                <h4>List Trip</h4>
                             </div>
                             <div class="isi-kotak">
-                                <form>
-                                    <div class="baris">
-                                        <div class="kolom-12">
+                                <button id="tambah" type="button" class="btn btn-biruMuda">Tambah</button>
+                                <br><br>
+                                <div>
+                                    <table>
+                                        <thead class="text-primary">
+                                            <th>
+                                                No
+                                            </th>
+                                            <th>
+                                                Nama
+                                            </th>
+                                            <th>
+                                                Harga
+                                            </th>
+                                            <th>
+                                                Lokasi
+                                            </th>
+                                            <th>
+                                                Rating
+                                            </th>
+                                            <th>
+                                                Action
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    1
+                                                </td>
+                                                <td>
+                                                    Gunung Bromo
+                                                </td>
+                                                <td>
+                                                    15.000
+                                                </td>
+                                                <td>
+                                                   Probolinggo
+                                                </td>
+                                                <td>
+                                                    5
+                                                </td>
+                                                <td>
+                                                    <a id="ubah" href="#">
+                                                        <i class="material-icons">edit</i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="material-icons">delete</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    2
+                                                </td>
+                                                <td>
+                                                    Kawah Ijen
+                                                </td>
+                                                <td>
+                                                    20.000
+                                                </td>
+                                                <td>
+                                                    Banyuwangi
+                                                </td>
+                                                <td>
+                                                    5
+                                                </td>
+                                                <td>
+                                                    <a href="">
+                                                        <i class="material-icons">edit</i>
+                                                    </a>
+                                                    <a href="">
+                                                        <i class="material-icons">delete</i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="tambahTrip" class="popup">
+                                <div class="isiPopup">
+                                    <div class="popup-header">
+                                        <span class="close">&times;</span>
+                                        <h2>Tambah Trip</h2>
+                                    </div>
+                                    <form action="">
+                                        <div class="popup-body">
                                             <div class="form">
-                                                <label for="ingambar" class="ingambarlabel">Pilih gambar</label>
-                                                <input type="file" name="foto" id="ingambar" class="isianForm inputgambar" accept="image/*">
+                                                <label for="judul">Nama:</label>
+                                                <input type="text" id="judul" name="judul" placeholder="Masukkan Judul" required>
                                             </div>
                                             <div class="form">
-                                                <input type="text" class="isianForm" placeholder="Nama">                                                
+                                                <label for="harga">Harga:</label>
+                                                <input type="text" id="harga" name="harga" placeholder="Masukkan Harga" required>
                                             </div>
                                             <div class="form">
-                                                <input type="text" class="isianForm" placeholder="Alamat">                                                
+                                                <label for="lokasi">Lokasi:</label>
+                                                <input type="text" id="lokasi" name="lokasi" placeholder="Masukkan Lokasi" required>
                                             </div>
                                             <div class="form">
-                                                <input type="text" class="isianForm" placeholder="Tempat Tinggal">                                                
+                                                <label for="rating">Rating: (1-5)</label>
+                                                <input type="text" id="rating" name="rating" placeholder="Masukkan Rating" required>
                                             </div>
                                             <div class="form">
-                                                <textarea class="isianForm" placeholder="Deskripsi" rows="4"></textarea>                                              
+                                                <label for="deskripsi">Deskripsi:</label>
+                                                <textarea type="text" rows="3" id="deskripsi" name="deskripsi" placeholder="Masukkan Deskripsi" required></textarea>
                                             </div>
                                         </div>
+                                        <div class="popup-footer">
+                                            <button id="tambah" type="button" class="btn1 btn-biruMuda">Tambah</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="ubahTrip" class="popup">
+                                <div class="isiPopup">
+                                    <div class="popup-header">
+                                        <span class="close1">&times;</span>
+                                        <h2>UBah Trip</h2>
                                     </div>
-                                    <button type="submit" class="btn btn-biru">Update Profile</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="kolom-4">
-                        <div class="kotak card-profile">
-                            <div class="bingkai-foto">
-                                <a href="#pablo">
-                                    <img class="img" id="gambarpreview" src="../../../images/icon.png"/>
-                                </a>
-                            </div>
-                            <div class="isi-kotak">
-                                <h4>Shohihul</h4>
-                                <h6>CEO Nglayap</h6>
-                                <p class="card-description">
-                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cum quod odit modi dicta facere iure. Tenetur harum eaque tempore consequuntur voluptatibus et blanditiis! At veniam soluta consequatur aliquid distinctio?
-                                </p>
+                                    <form action="">
+                                        <div class="popup-body">
+                                            <div class="form">
+                                                <label for="judul">Nama:</label>
+                                                <input type="text" id="judul" name="judul" placeholder="Masukkan Judul" value="Gunung Bromo" required>
+                                            </div>
+                                            <div class="form">
+                                                <label for="harga">Harga:</label>
+                                                <input type="text" id="harga" name="harga" placeholder="Masukkan Harga" value="15.000" required>
+                                            </div>
+                                            <div class="form">
+                                                <label for="lokasi">Lokasi:</label>
+                                                <input type="text" id="lokasi" name="lokasi" placeholder="Masukkan Lokasi" value="Probolinggo" required>
+                                            </div>
+                                            <div class="form">
+                                                <label for="rating">Rating: (1-5)</label>
+                                                <input type="text" id="rating" name="rating" placeholder="Masukkan Rating" value="5" required>
+                                            </div>
+                                            <div class="form">
+                                                <label for="deskripsi">Deskripsi:</label>
+                                                <textarea type="text" rows="3" id="deskripsi" name="deskripsi" placeholder="Masukkan Deskripsi" required>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatum dolores voluptates amet? Vero sit distinctio rem mollitia, 
+                                                    dolorum dignissimos aperiam eum obcaecati cum fugiat iure excepturi optio illum vel.
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <div class="popup-footer">
+                                            <button id="tambah" type="button" class="btn1 btn-biruMuda">Ubah</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
