@@ -50,7 +50,8 @@ $(document).ready(function(){
     $(".image-destination").show(function() {
         var attr = $(this).attr('hero-image');
         if (typeof attr !== typeof undefined && attr !== false){
-            $(this).css('background', 'url(../images/'+$(this).attr('hero-image')+'.jpg)');
+            $(this).css('background', 'url(../images/'+$(this).attr('hero-image')+'.jpg) no-repeat center');
+            $(this).css('background-size', 'cover');
         } else {
             $(this).attr('src', '../images/'+$(this).attr('id')+'.jpg');
         }

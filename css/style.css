@@ -10,16 +10,18 @@ body{
     position: relative;
     height: 600px;
     overflow: hidden;
-    background-size: cover; 
 }
 #home_image{
     background: url(../images/bromo.jpg) no-repeat center;
+    background-size: cover; 
 }
 #trip_image{
     background: url(../images/baluran.jpg) no-repeat center;
+    background-size: cover; 
 }
 #service_image{
     background: url(../images/bromoSemeru.jpg) no-repeat center;
+    background-size: cover; 
 }
 
 .container{
