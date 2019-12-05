@@ -56,7 +56,6 @@ $(document).ready(function(){
             $(this).attr('src', '../images/'+$(this).attr('id')+'.jpg');
         }
     });
-
     $('.kawah-ijen .star').bintang();
     $('.gunung-bromo .star').bintang();
     $('.papuma .star').bintang();

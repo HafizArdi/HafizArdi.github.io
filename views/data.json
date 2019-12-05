@@ -3,13 +3,34 @@
 [
 	{
 		"name"		:"Gunung Bromo",
-		"rating"	:"5",
-		"image"		:"bromo.jpg"	
+		"rating"	:"2560",
+		"image"		:"bromoSemeru.jpg"	
 	},
 	{
 		"name"		:"Pantai Papuma",
-		"rating"	:"5",
+		"rating"	:"3030",
 		"image"		:"papuma.jpg"	
+	},
+	{
+		"name"		:"Kawah Ijen",
+		"rating"	:"6070",
+		"image"		:"ijen.jpg"	
+	},
+	{
+		"name"		:"Baluran",
+		"rating"	:"9870",
+		"image"		:"baluran.jpg"	
+	},
+	{
+		"name"		:"Candi Borobudur",
+		"rating"	:"9654",
+		"image"		:"borobudur.jpg"	
+	}
+	,
+	{
+		"name"		:"Labuan Najo",
+		"rating"	:"9296",
+		"image"		:"labuanBajo.jpg"	
 	}
 
 ]

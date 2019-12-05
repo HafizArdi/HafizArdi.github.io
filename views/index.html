@@ -5,36 +5,18 @@
 <script type="text/javascript" src="../js/jquery/jquery.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
-        $("#province").each(function(){
-            $.ajax({
-                url: "{{ route('admin.regencie.get_by_province') }}?province_id=" + $(this).val(),
-                method: 'GET',
-                success: function(data) {
-                    $('#regencie').append(data.html);
-                }
-            });
-        });
-        
-        $("#data").each(function(){
-            $.ajax({
-                url: "data.php",
-                method: 'GET',
-                success: function(data) {
-                    var html = "";
-                    for(var a = 0; a < data.length; a++) {
-                        var name = data[a].name;
-                        var rating = data[a].rating;
-                        var image = data[a].image;
-
-                        html += "<tr>";
-                            html += "<td>" + name + "</td>";
-                            html += "<td>" + rating + "</td>";
-                            html += "<td>" + image + "</td>";
-                        html += "</tr>";
-                    }
-                    document.getElementById("data").innerHTML += html;
-                }
-            });
+        $.ajax({ 
+            type: 'GET', 
+            url: 'https://raw.githubusercontent.com/HafizArdi/HafizArdi.github.io/master/views/data.json', 
+            data: { get_param: 'value' }, 
+            dataType: 'json',
+            success: function (data) { 
+                $.each(data, function(index, element) {
+                    $('#data').append($('<div>', {
+                        text: element.name
+                    }));
+                });
+            }
         });
     })
 </script>
@@ -42,7 +24,9 @@
 <body>
 	<h1>Demo JQUERY GetJSON Ambil data dari JSON PHP</h1>
 	<p>Halaman ini mendemokan bagaimana GetJSON JQUERY mampu mempersing data JSON yang digenerate oleh PHP JSON ENCODE</p>
-
+    <div class="">
+        <a class="load-data" href="#!">Load Data</a>
+    </div>
 	<table>
         <tr>
         <th>Name
