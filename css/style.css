@@ -422,7 +422,7 @@ nav ul li img{
     font-size: 11px;
 }
 
-.trip .konten button{
+.trip .konten a{
     background-color: #3E9CEE;
     border: none;
     color: white;
@@ -675,7 +675,7 @@ nav ul li img{
 .detail .judul{
     margin: 0px;
     padding: 0px;
-    font-size: 70px;
+    font-size: 50px;
     opacity: 0.85;
     font-weight: bold;
     text-transform: uppercase;
@@ -722,6 +722,17 @@ nav ul li img{
     width: 20px;
     height: 20px;
     margin: 5px;
+}
+.more {
+    background-color: #3E9CEE;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 2px;
 }
 
 @keyframes slideUp {

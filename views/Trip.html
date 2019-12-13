@@ -31,21 +31,67 @@
                 <h6 class="des">IS EASY AND FUN</h6>
             </div>
         </div>
-        <button id="load">Load data</button>
-        <div class="trip" id="destination"></div>
+        <div class="trip" id="destination">
+            <div class="konten">
+                <div class="title">
+                    <h3>Gunung Rinjani</h3>
+                    <div class="rating">
+                        <div class="star">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                        </div>
+                        <h5>2436 Ratings</h5>
+                    </div>
+                </div>
+                <img src="../images/rinjani.jpg" alt="" class="foto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sint exercitationem, et maxime perspiciatis libero eius error sit eaque qui, commodi tempore dolorem aperiam cupiditate asperiores repellendus in deserunt unde.</p>
+                <a href="rinjani.html">Read more</a>
+            </div>
+            <div class="konten">
+                <div class="title">
+                    <h3>Gunung Prau</h3>
+                    <div class="rating">
+                        <div class="star">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                        </div>
+                        <h5>2436 Ratings</h5>
+                    </div>
+                </div>
+                <img src="../images/prau.jpg" alt="" class="foto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sint exercitationem, et maxime perspiciatis libero eius error sit eaque qui, commodi tempore dolorem aperiam cupiditate asperiores repellendus in deserunt unde.</p>
+                <a href="prau.html">Read more</a>
+            </div>
+            <div class="konten">
+                <div class="title">
+                    <h3>Pantai Pandawa</h3>
+                    <div class="rating">
+                        <div class="star">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                            <img src="../images/star.svg" alt="">
+                        </div>
+                        <h5>2436 Ratings</h5>
+                    </div>
+                </div>
+                <img src="../images/pandawa.jpg" alt="" class="foto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sint exercitationem, et maxime perspiciatis libero eius error sit eaque qui, commodi tempore dolorem aperiam cupiditate asperiores repellendus in deserunt unde.</p>
+                <a href="pandawa.html">Read more</a>
+            </div>
+        </div>
 
         <div class="trip">
-                <div class="pagination">
-                    <a href="#">&laquo;</a>
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">&raquo;</a>
-                </div>
-            </div>
+            <button class="more" id="load">Show More</button>
+        </div>
+
         <div class="footer" id="footerBlue">
             <div class="tulisanKiri">
                 <h3>NGLAYAP</h3> 
@@ -77,8 +123,8 @@
                     dataType: 'json',
                     success: function (data) { 
                         $.each(data, function(index, elem) {
-                            console.log('name '+elem['name']+' - rating '+elem['rating']+' - image '+elem['image'])
-                            $('#destination').prepend('<div class="konten"><div class="title"><h3>'+elem['name']+'</h3><div class="rating"><div class="star"><img src="../images/star.svg" alt=""><img src="../images/star.svg" alt=""><img src="../images/star.svg" alt=""><img src="../images/star.svg" alt=""><img src="../images/star.svg" alt=""></div><h5>'+elem['rating']+' Ratings</h5></div></div><img src="../images/'+elem['image']+'" alt="" class="foto"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sint exercitationem, et maxime perspiciatis libero eius error sit eaque qui, commodi tempore dolorem aperiam cupiditate asperiores repellendus in deserunt unde.</p><button>Book Now</button></div>');
+                            console.log('name '+elem['name']+' - rating '+elem['rating']+' - image '+elem['image']+' - page '+elem['page'])
+                            $('#destination').append('<div class="konten"><div class="title"><h3>'+elem['name']+'</h3><div class="rating"><div class="star"><img src="../images/star.svg" alt=""><img src="../images/star.svg" alt=""><img src="../images/star.svg" alt=""><img src="../images/star.svg" alt=""><img src="../images/star.svg" alt=""></div><h5>'+elem['rating']+' Ratings</h5></div></div><img src="../images/'+elem['image']+'" alt="" class="foto"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sint exercitationem, et maxime perspiciatis libero eius error sit eaque qui, commodi tempore dolorem aperiam cupiditate asperiores repellendus in deserunt unde.</p><a href="'+elem['page']+'">Read more</a></div>');
                         });
                     }
                 });
