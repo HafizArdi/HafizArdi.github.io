@@ -77,7 +77,7 @@
                                                 Action
                                             </th>
                                         </thead>
-                                        <tbody>
+                                        <tbody id="data">
                                             <tr>
                                                 <td>
                                                     1
@@ -138,11 +138,11 @@
                                         <span class="close">&times;</span>
                                         <h2>Tambah Trip</h2>
                                     </div>
-                                    <form action="">
+                                    <form name="myForm">
                                         <div class="popup-body">
                                             <div class="form">
                                                 <label for="judul">Nama:</label>
-                                                <input type="text" id="judul" name="judul" placeholder="Masukkan Judul" required>
+                                                <input type="text" id="nama" name="judul" placeholder="Masukkan Judul" required>
                                             </div>
                                             <div class="form">
                                                 <label for="harga">Harga:</label>
@@ -162,7 +162,7 @@
                                             </div>
                                         </div>
                                         <div class="popup-footer">
-                                            <button id="tambah" type="button" class="btn1 btn-biruMuda">Tambah</button>
+                                            <button id="tambah" type="button" class="btn1 btn-biruMuda input">Tambah</button>
                                         </div>
                                     </form>
                                 </div>
@@ -177,7 +177,7 @@
                                         <div class="popup-body">
                                             <div class="form">
                                                 <label for="judul">Nama:</label>
-                                                <input type="text" id="judul" name="judul" placeholder="Masukkan Judul" value="Gunung Bromo" required>
+                                                <input type="text" id="nama" name="judul" placeholder="Masukkan Judul" value="Gunung Bromo" required>
                                             </div>
                                             <div class="form">
                                                 <label for="harga">Harga:</label>
@@ -213,4 +213,26 @@
 </body>
 <script type="text/javascript" src="../../../js/jquery/jquery.js"></script>
 <script type="text/javascript" src="../../../js/javascript.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var no = 2;
+        $(".input").click(function(){
+            input();
+            $('#tambahTrip').css("display", "none");
+        })
+        function input(){
+            var nama = document.getElementById("nama").value;
+            var harga = document.getElementById("harga").value;
+            var lokasi = document.getElementById("lokasi").value;
+            var rating = document.getElementById("rating").value;
+            var deskripsi = document.getElementById("deskripsi").value;
+            no++;
+
+            $("#data").append('<tr><td>'+no+'</td><td>'+nama+'</td><td>'+harga+'</td><td>'+harga+'</td><td>'+rating+'</td><td><a href=""><i class="material-icons">edit</i></a><a href=""><i class="material-icons">delete</i></a></td>/tr></tbody>');
+            
+
+        }
+    })
+
+</script>
 </html>

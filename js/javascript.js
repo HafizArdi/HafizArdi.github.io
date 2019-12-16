@@ -112,7 +112,9 @@ function namedefine(){
     namedefine();
 });
 
-
+function input() {
+    $("#data").append('<tr><td>no</td></tr>');
+}
 function validateForm() {
   var email = document.forms["myForm"]["email"].value;
   var password = document.forms["myForm"]["password"].value;
